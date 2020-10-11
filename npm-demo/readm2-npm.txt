@@ -1,0 +1,19 @@
+//^ Major,Minor,Patch
+//4.13.7 Patch version - for fixing bug
+//4.14.0 Minor version - add new feature for without breaking existing api
+//5.0.0 Major version - If they add new feature that could potentially break existing app that depend upon mongoose
+//^ Minor version as long as Major version is 4
+// another way to replicate ^ via 4.x
+//~ Tilde as long as Major and Minor version is same ~1.8.3 then 1.8 should be same alternativly 1.8.x
+// no sign before version means it will be exact same version installed
+//npm list for all the tree dependencies
+//npm list --depth=0 will show app dependencies
+//npm view mongoose will show all the dependencies an other properties
+//Install specific version of package npm i mongoose@4.1.2
+//npm outdated will show packages which are outdated
+//npm update will only work with Minor and Patch releases
+//Update all packages to latest version run sudo npm i -g npm-check-updates
+//npm-check-updates will check all outdated packages with latest version
+//npm-check-updates -u or ncu -u will update all the dependencies in package.json and then run npm i to install latest version
+//npm uninstall mongoose or npm un mongoose to uninstall package
+//npm i jshint --save-dev for only dev dependencies it will not go to production
