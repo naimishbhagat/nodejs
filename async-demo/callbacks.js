@@ -3,6 +3,8 @@ console.log('Before');
 getUser(1,getRepos);
 console.log('After');
 
+
+
 //Synchronous
 /*
 console.log('Before');

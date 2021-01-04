@@ -17,7 +17,7 @@ router.get('/',async (req, res, next) => {
 router.post('/',auth, async (req, res) => {
 
   const token = req.header('x-auth-token');
-  res.status(401).send('')
+  res.status(401).send('');
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
